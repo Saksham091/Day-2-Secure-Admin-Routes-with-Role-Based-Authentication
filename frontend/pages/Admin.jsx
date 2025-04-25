@@ -18,7 +18,7 @@ function Admin() {
       }
 
       try {
-        const response = await axios.get("http://localhost:8000/api/admin", {
+        const response = await axios.get("http://localhost:5000/api/admin", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

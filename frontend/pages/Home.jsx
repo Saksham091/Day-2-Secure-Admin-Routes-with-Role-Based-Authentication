@@ -10,7 +10,7 @@ function Home() {
 
   const handleRegister = async () => {
     try {
-      await axios.post("http://localhost:8000/api/auth/register", {
+      await axios.post("http://localhost:5000/api/auth/register", {
         username,
         password,
         role,
@@ -30,7 +30,7 @@ function Home() {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/auth/login",
+        "http://localhost:5000/api/auth/login",
         {
           username,
           password,
